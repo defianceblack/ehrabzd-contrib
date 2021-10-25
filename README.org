@@ -32,7 +32,7 @@
 >  !fx
 => 1 BTC = nnnnnn.nn USD
 
-> !fx ltc
+>  !fx ltc
 => 1 LTC = nnn.nn USD
 
 > !fx usd cad 10
@@ -59,7 +59,7 @@
 >  !temp
 => Toronto: img n*C
 
-> !temp CN Tower
+>  !temp CN Tower
 => CN Tower: img n*C
 #+END_EXAMPLE
 
