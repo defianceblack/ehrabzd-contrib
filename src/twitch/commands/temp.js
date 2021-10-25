@@ -21,5 +21,5 @@ module.exports = async (client, target, context, message, args) => {
 
   ax.get(`https://wttr.in/${location}?format=3`)
     .then((data) => client.say(target, data.data))
-    .catch((error) => client.say(target, `[${PS2}temp]: The weather service responded with an error. Try again!`)
+    .catch((error) => client.say(target, `[${PS2}temp]: The weather service responded with an error. Try again!`))
 }
