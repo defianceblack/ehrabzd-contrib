@@ -1,0 +1,73 @@
+* ehrabzd-contrib
+
+** Twitch Commands
+
+*** ctof
+
+~F = num * (9/5) + 32~
+
+#+BEGIN_EXAMPLE text
+>  !ctof
+=> 0*C = 32*F
+
+>  !ctof -17.78
+=> -17.78*C = -0.00*F
+#+END_EXAMPLE
+
+*** ftoc
+
+~C = (num - 32) * (5/9)~
+
+#+BEGIN_EXAMPLE text
+>  !ftoc
+=> 0*F = -17.78*C
+
+>  !ftoc 32
+=> 32*F = 0.00*C
+#+END_EXAMPLE
+
+*** fx
+
+#+BEGIN_EXAMPLE text
+>  !fx
+=> 1 BTC = nnnnnn.nn USD
+
+> !fx ltc
+=> 1 LTC = nnn.nn USD
+
+> !fx usd cad 10
+=> 10 USD = nn.nn CAD
+#+END_EXAMPLE
+
+*** roll
+
+#+BEGIN_EXAMPLE text
+>  !roll
+=> nn
+#+END_EXAMPLE
+
+*** rolld
+
+#+BEGIN_EXAMPLE text
+>  !rolld 3d3
+=> @Username rolled 3d3: [n, n, n] = n
+#+END_EXAMPLE
+
+*** temp
+
+#+BEGIN_EXAMPLE text
+>  !temp
+=> Toronto: img n*C
+
+> !temp CN Tower
+=> CN Tower: img n*C
+#+END_EXAMPLE
+
+*** tr
+
+#+BEGIN_EXAMPLE text
+>  !tr Tu es incroyable!
+=> @Username [FR] "You are incredible!"
+
+> !tr -t de Tu es incroyable!
+#+END_EXAMPLE
