@@ -1,5 +1,4 @@
 const ax = require("axios")
-const {logger, PS1} = require("../../../log")
 
 module.exports = async (client, target, context, message, args) => {
   let location = ""
@@ -22,5 +21,5 @@ module.exports = async (client, target, context, message, args) => {
 
   ax.get(`https://wttr.in/${location}?format=3`)
     .then((data) => client.say(target, data.data))
-    .catch((error) => logger.error(PS1(), "[temp]", error))
+    .catch((error) => client.say(target, `[${PS2}temp]: The weather service responded with an error. Try again!`)
 }

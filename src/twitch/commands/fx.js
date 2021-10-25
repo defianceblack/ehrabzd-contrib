@@ -1,4 +1,5 @@
 const ax = require("axios")
+const PS2 = process.env.TWITCH_PREFIX
 
 module.exports = async (client, target, context, message, args) => {
   let from_curr = "BTC"
@@ -34,7 +35,7 @@ module.exports = async (client, target, context, message, args) => {
     }
 
     if (data.data["Error Message"]) {
-      client.say(target, "[#'fx] Try `#'fx usd cad` or `#'fx eth`.")
+      client.say(target, `[${PS2}'fx] Try "${PS2}fx usd cad", "${PS2}fx eth" or even "${PS2}fx gbp cad 19.99"!`)
     }
   })
 }
