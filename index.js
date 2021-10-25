@@ -1,4 +1,4 @@
-const {readdirSync} = require("fs")
+const {readDirSync} = require("fs")
 const CMDz = new Map()
 
 let commandFiles = readDirSync(`${__dirname}/src/twitch/commands`).filter((file) => !file.startsWith("_") && file.endsWith(".js"))
