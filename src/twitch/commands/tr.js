@@ -1,10 +1,8 @@
-const ax = require("axios")
 const gt = require("@iamtraction/google-translate")
 
 const PS2 = process.env.TWITCH_PREFIX
 
 module.exports = async (client, target, context, message, args) => {
-  // #'tr [-f auto, -t en] Tu es incroyable!
   let help = () => {
     let res = `@${context["display-name"]}, try, "${PS2}tr Tu es incroyable!" without quotes.`
     res = res.concat(` ${PS2}tr also accepts -f XX and -t XX where XX is a two letter language code.`)
@@ -25,8 +23,9 @@ module.exports = async (client, target, context, message, args) => {
       raw: false
     }
   }
-  let translate = (words) => {
-    gt(words, gtOpts())
+  
+  let translate = async (words) => {
+    await gt(words, gtOpts())
       .then((res) => {
         let fR = res.from.language.iso.toUpperCase()
         let tO = gtOpts().to.toUpperCase()
@@ -57,5 +56,5 @@ module.exports = async (client, target, context, message, args) => {
   }
 
   trText = args.join(" ")
-  translate(trText)
+  await translate(trText)
 }
