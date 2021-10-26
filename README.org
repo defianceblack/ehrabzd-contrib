@@ -67,7 +67,11 @@
 
 #+BEGIN_EXAMPLE text
 >  !tr Tu es incroyable!
-=> @Username [FR] "You are incredible!"
+=> @Username [FR->EN] You are incredible!
 
-> !tr -t de Tu es incroyable!
+>  !tr -t de Tu es incroyable!
+=> @Username [FR->DE] Du bist fantastisch!
+
+>  !tr -f de -t nl Du bist fantastisch!
+=> @Username [DE->NL] Je bent geweldig!
 #+END_EXAMPLE
