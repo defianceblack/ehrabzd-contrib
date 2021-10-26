@@ -53,6 +53,9 @@
 >  !roll
 => @Username rolled nn
 
+>  !roll 10
+=> @Username rolled n
+
 >  !roll d 3d3
 => @Username rolled 3d3: [n, n, n] = n
 #+END_EXAMPLE
