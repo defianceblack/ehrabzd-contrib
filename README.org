@@ -74,7 +74,7 @@
 
 #+BEGIN_EXAMPLE text
 >  !tr Tu es incroyable!
-=> @Username [FR->EN] You are incredible!
+=> @Username [FR->EN] You're amazing!
 
 >  !tr -t de Tu es incroyable!
 => @Username [FR->DE] Du bist fantastisch!
