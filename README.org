@@ -51,7 +51,7 @@
 
 #+BEGIN_EXAMPLE text
 >  !roll
-=> nn
+=> @Username rolled nn
 
 >  !roll d 3d3
 => @Username rolled 3d3: [n, n, n] = n
