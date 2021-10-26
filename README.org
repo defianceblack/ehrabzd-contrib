@@ -1,5 +1,13 @@
 * ehrabzd-contrib
 
+- [[#twitch-commands][Twitch Commands]]
+  - [[#ctof][ctof]]
+  - [[#ftoc][ftoc]]
+  - [[#fx][fx]]
+  - [[#roll][roll]]
+  - [[#temp][temp]]
+  - [[#tr][tr]]
+
 ** Twitch Commands
 
 *** ctof
@@ -44,12 +52,8 @@
 #+BEGIN_EXAMPLE text
 >  !roll
 => nn
-#+END_EXAMPLE
 
-*** rolld
-
-#+BEGIN_EXAMPLE text
->  !rolld 3d3
+>  !roll d 3d3
 => @Username rolled 3d3: [n, n, n] = n
 #+END_EXAMPLE
 
