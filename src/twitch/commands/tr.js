@@ -1,4 +1,5 @@
 const gt = require("@iamtraction/google-translate")
+require("dotenv").config()
 
 const PS2 = process.env.TWITCH_PREFIX
 
